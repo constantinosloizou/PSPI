@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEP | Reset password</title>
+  <link rel="stylesheet" href="../Css/Reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <li><a class="first-logo" href="First_Page.html">IEP |</a></li>
+        <li><a class="second-logo" href="First_Page.html">International Environmental Protection</a></li>
+        
+      </div>
+
+      <nav id="back">
+        <li><a href="First_Page.html" target="_self"> Home </a></li>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="reset animate">
+
+    <form>
+      
+      <div class="imgcontainer">
+        <i class="fa fa-unlock" aria-hidden="true"></i>
+      </div>
+
+      <div class="container2">
+        <label for="mail"><b>Email Address</b></label>
+        <input type="email" oninvalid="InvalidInput(this);" oninput="InvalidInput(this);" name="email" class="input-box"
+        placeholder="Email" required="required">
+        <button class="reset-btn" type="submit">Reset now</button>
+      </div>
+      <hr>
+      <p class="or">OR</p>
+
+
+      <p class="connect">Go back to <a href="../Html/Login.html">Log in</a></p>
+    </form>
+
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="../JavaScript/Login.js"></script>
+  
+ 
+
+</body>
+
+</html>

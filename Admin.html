@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Css/Admin.css">
+    <title>IEP | Admin</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <li><a class="first-logo" href="First_Page.html">IEP |</a></li>
+                <li><a class="second-logo" href="First_Page.html">International Environmental Protection</a></li>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="current"><a href="first_page.html">Home <i class="fa fa-home"></i></a></li>
+                    <div class="dropdown">
+                        <li id="fake"><a href="#"><button class="dropdown-btn">About <i class="up"></i><i
+                                        class="down"></i></button></a></li>
+                        <div class="dropdown-content">
+                            <a href="Forests.html" target="_self">Forests</a>
+                            <a href="Marines.html" target="_self">Marines</a>
+                            <a href="Events.html" target="_self">Events</a>
+                            <a href="Posts.html" target="_self">Posts</a>
+                        </div>
+                    </div>
+                    <li><a href="Contact.html" target="_self">Contact</a></li>
+                    <li><a href="User.html" target="_self">Profile</a></li>
+                    <li><a href="Admin.html" target="_self">Manage</a></li>
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="main-bd">
+                <div class="right-side">
+                    <div class="nav">
+                        <ul>
+                            <li onclick="tabs(0)" class="user-post active">Manage Events</li>
+                            <li onclick="tabs(1)" class="user-review">Manage Posts</li>
+                            <li onclick="tabs(2)" class="user-setting">Manage Users</li>
+
+                        </ul>
+                    </div>
+                    <div class="profile-body">
+                        <div class="profile-post tab">
+
+                            <div class="events-options">
+                                <div class="card">
+
+                                    <h1>Beach Clean-Up</h1>
+                                    <h2><i class="fa fa-map-marker"></i> Ladys Mile Beach</h2>
+                                    <h3>Date: 25/5/2020</h3>
+                                </div>
+                                <div class="buttons">
+                                    <button class="remove">
+                                        remove
+                                    </button>
+                                    <button class="edit">
+                                        edit
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="add">
+                                <button>Add event</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="profile-reviews tab">
+                        <div class="posts-options">
+                            <div class="card">
+                                <h1>Facts about the Amazon Rainforest</h1>
+                                <h2>Subject: Forests</h3>
+                                <h3>Published by</h4>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="remove">
+                                    remove
+                                </button>
+                                <button class="edit">
+                                    edit
+                                </button>
+                            </div>
+
+                            <div class="add">
+                                <button>Add post</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-settings tab">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolorum alias eligendi
+                            atque esse. Laudantium, eum vero. Ut, cupiditate consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../JavaScript/User.js"></script>
+</body>
+
+</html>

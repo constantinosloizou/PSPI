@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Css/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href ="../Css/Contact_Mob.css" media="screen and (min-device-width:320px) and (max-device-width:420px)">
+
+    
+    <title>IEP | Contact us</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="logo">
+                <li><a class="first-logo" href="First_Page.html">IEP |</a></li>
+                <li><a class="second-logo" href="First_Page.html">International Environmental Protection</a></li>
+                
+        </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="current"><a href="first_page.html" target="_self">Home <i class="fa fa-home"></i></a></li>
+                    <div class="dropdown">
+
+                        <li id="fake"><a href="#"><button class="dropdown-btn">About <i class="up"></i><i class="down"></i></button></a></li>
+                        <div class="dropdown-content">
+                            <a href="First_Page.html" target="_self">Forests</a>
+                            <a href="Marines.html" target="_self">Marines</a>
+                            <a href="Events.html" target="_self">Events</a>
+                            <a href="Posts.html" target="_self">Posts</a>
+                        </div>
+                    </div>
+                    <li><a href="Contact.html" target="_self">Contact</a></li>
+                    <li><a href="Signup.html" target="_self">Sign up</a></li>
+                    <li><a href="Login.html" target="_self">Log in</a></li>
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container2">
+        <form action="action_page.php">
+         <div class="boxes">
+            <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required="" oninvalid="this.setCustomValidity('Please Enter a valid name')" oninput="setCustomValidity('')">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="" oninvalid="this.setCustomValidity('Please Enter a valid last name')" oninput="setCustomValidity('')">
+
+          <label for="email">Email Address</label>
+          <input type="text" id="mail" name="email" placeholder="Your email address.." pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required oninvalid="this.setCustomValidity('Please Enter a valid email(example@hotmail.com)')" oninput="setCustomValidity('')">
+
+          <label for="country">Continent</label>
+
+          <select id="country" name="country" required="" oninvalid="this.setCustomValidity('Please select your continent')" oninput="setCustomValidity('')">
+            <option value="" disabled selected>Select continent</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="america">America</option>
+            <option value="australia">Australia</option>
+            <option value="antartica">Antartica</option>
+            <option value="africa">Africa</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      
+          <input type="submit" value="Submit">
+         </div>
+      
+        </form>
+    </div>
+
+
+    <script src="../JavaScript/Contact.js"></script>
+
+    <footer>
+        <p>
+            <span id="copyrights">International Enviromental Protection, Copyright &copy; 2020 •</span>
+            <a href="PrivacyPolicy.html" target="">Privacy Policy </a> <span id="copyrights">•</span> 
+            <a href="TermsConditions.html" target="">Terms&Conditions</a>
+        </p>
+    </footer>
+
+</body>
+</html>

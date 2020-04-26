@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/User.css">
+    <link rel="stylesheet" type="text/css" href ="../Css/User_Mobile.css" media="screen and (min-device-width:320px) and (max-device-width:425px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IEP | User page</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="logo">
+                <li><a class="first-logo" href="First_Page.html">IEP |</a></li>
+                <li><a class="second-logo" href="First_Page.html">International Environmental Protection</a></li>
+                
+                <!--<h1>IEP | </h1>
+                <h2>International Enviromental Protection</h2>
+                -->
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="current"><a href="first_page.html">Home <i class="fa fa-home"></i></a></li>
+                    <div class="dropdown">
+
+                        <li id="fake"><a href="#"><button class="dropdown-btn">About <i class="up"></i><i class="down"></i></button></a></li>
+                        <div class="dropdown-content">
+                            <a href="Forests.html" target="_self">Forests</a>
+                            <a href="Marines.html" target="_self">Marines</a>
+                            <a href="Events.html" target="_self">Events</a>
+                            <a href="Posts.html" target="_self">Posts</a>
+                        </div>
+                    </div>
+                    <li><a href="Contact.html" target="_self">Contact</a></li>
+                    <li><a href="User.html" target="_self">Profile</a></li>
+
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-img">
+                    <img src="../Images/Contact.jpg" width="200" alt="">
+                </div>
+                <div class="profile-nav-info">
+                    <h3 class="user-name">Cotsios Loizou</h3>
+                    <div class="address">
+                        <p class="state">Thessaloniki</p>
+                        <span class="country">Greece</span>
+                    </div>
+                </div>
+                <div class="profile-option">
+                    <div class="notification">
+                        <i class="fa fa-bell"></i>
+                        <span class="alert-message">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bd">
+                <div class="left-side">
+                    <div class="profile-side">
+                        <p class="mobile-no">
+                            <i class="fa fa-phone"></i><span>+308479382</span>
+                        </p>
+                        <p class="user-mail">
+                            <i class="fa fa-envelope"></i><span>djks@hotmail.com</span> 
+                        </p>
+                        <div class="user-bio">
+                            <h3>Bio</h3>
+                            <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, sunt
+                                dolorem quibusdam repellendus id consectetur fuga debitis incidunt corporis recusandae!
+                            </p>
+
+                        </div>
+                        <div class="profile-btn">
+                            <button class="chatbtn">
+                                <i class="fa fa-comment"></i>Email
+                            </button>
+                            <!--<button class="createbtn">
+                            <i class="fa fa-plus"></i>Create
+                        </button>
+                    -->
+                        </div>
+                        <div class="user-rating">
+                            <h3 class="rating">4.5</h3>
+                            <div class="rate">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span class="no-user">
+                                    <span>123</span>&nbsp;&nbsp;reviews
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="nav">
+                        <ul>
+                            <li onclick="tabs(0)" class="user-post active">Posts</li>
+                            <li onclick="tabs(1)" class="user-review">Reviews</li>
+                            <li onclick="tabs(2)" class="user-setting">Settings</li>
+
+                        </ul>
+                    </div>
+                    <div class="profile-body">
+                        <div class="profile-post tab">
+                            
+                            <h1>Your posts</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem ipsam aliquid cum
+                                animi necessitatibus quia suscipit atque corrupti incidunt!</p>
+                        </div>
+
+                        <div class="profile-reviews tab">
+                            <h1>User Reviews</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eveniet quis reiciendis
+                                corporis tempore exercitationem dolorum, ipsa deleniti iste voluptate?</p>
+                        </div>
+
+                        <div class="profile-settings tab">
+                            <h1>Account Settings</h1>
+                            
+                                <form action="action_page.php">
+                                    <div class="boxes">
+                                     <label for="userName">User Name</label>
+                                     <input type="text" id="uname" name="firstname">
+                                 
+                                     <label for="phone">Phone Number</label>
+                                     <input type="text" id="mobile" name="lastname" >
+
+                                     <label for="mail">Email Address</label>
+                                     <input type="text" id="mailadd" name="lastname" placeholder="Your last name.." >
+
+                                     <label for="city">City</label>
+                                     <input type="text" id="city" name="lastname" placeholder="Your last name.." >
+
+                                     <label for="country">Country</label>
+                                     <input type="text" id="country" name="lastname" placeholder="Your last name.." >
+                                     
+                                     <!--<input type="submit" value="Save Changes" onclick="">
+                                     -->
+                                    </div>
+                                </form>
+                                <button class="save">Save Changes</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../JavaScript/User.js"></script>
+    <script src="../JavaScript/First_Page.js"></script>
+</body>
+
+</html>
